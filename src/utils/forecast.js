@@ -25,9 +25,13 @@ const forecast = (latitude, longitude, callback) => {
           body.current.weather_descriptions[0].toLowerCase() +
           ". It is currently " +
           body.current.temperature +
-          " out and feels like " +
+          " degrees out and feels like " +
           body.current.feelslike +
-          "."
+          " degrees. The humidity is " + 
+          body.current.humidity +
+          "% with winds at " +
+          body.current.wind_speed +
+          "mph."
       );
     }
   });
